@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Calculator</title>
+<style type="text/css">
+	* {margin: 0; padding: 0; font-size: 25px;}
+	input.display {width: 234; text-align: right; font-size: 25; margin: 5; padding: 5}
+	.button {width: 50; height: 50; margin: 2}
+</style>
+</head>
+
+<body>
+<form name="calc" id="calculator">
+	<table>
+	<td>
+		<input type="textview" name="input" class="display">
+	</td>
+	<tr>
+	<td>
+		<input type="button" class="button" name="seven" value="7" OnClick="calc.input.value += '7'">
+		<input type="button" class="button" name="eight" value="8" OnClick="calc.input.value += '8'">
+		<input type="button" class="button" name="nine" value="9" OnClick="calc.input.value += '9'">
+				
+		<input type="button" class="button" name="clear" value="C" OnClick="calc.input.value = ''">
+
+		<br>
+		<input type="button" class="button" name="four" value="4" OnClick="calc.input.value += '4'">
+		<input type="button" class="button" name="five" value="5" OnClick="calc.input.value += '5'">
+		<input type="button" class="button" name="six" value="6" OnClick="calc.input.value += '6'">
+		<input type="button" class="button" name="add" value="+" OnClick="calc.input.value += '+'">
+		<br>
+		<input type="button" class="button" name="one" value="1" OnClick="calc.input.value += '1'">
+		<input type="button" class="button" name="two" value="2" OnClick="calc.input.value += '2'">
+		<input type="button" class="button" name="three" value="3" OnClick="calc.input.value += '3'">
+		<input type="button" class="button" name="mul" value="*" OnClick="calc.input.value += '*'">
+		<br>
+		<input type="button"  style="width: 112" class="button" name="zero" value="0" OnClick="calc.input.value += '0'">
+		<input type="button" class="button" name="coma" value="." OnClick="calc.input.value += '.'">
+		<input type="button" class="button" name="sub" value="-" OnClick="calc.input.value += '-'">
+		<br>
+		<input style="width: 174" type="button" class="button" name="evaluate" value="=" OnClick="calc.input.value = eval(calc.input.value)">
+		<input type="button" class="button" name="div"  value="/" OnClick="calc.input.value += '/'">
+
+	</td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
